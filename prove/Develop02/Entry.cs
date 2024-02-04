@@ -1,42 +1,13 @@
-public class Entry
-{
-    public string prompt;
-    public string date;
-    public string entry;
+public class Entry {
+
+    public DateTime Date { get; set; }
+    public string Reponse { get; set; }
+    public string Prompt { get; set; }
 
 
-    private void Display()
-    {
-
+    public void DisplayEntry() {
+        Console.WriteLine($"{Date.ToString("MM/dd/yyyy | hh:mm")} \nPrompt: {Prompt} \n>> {Reponse}");
     }
 
-    private void GetResponse()
-    {
-        
-    }
 
-    private void GetDate()
-    {
-        
-    }
-
-    private void SetPrompt()
-    {
-        
-    }
-
-    private void SetResponse()
-    {
-        
-    }
-
-    private void SetDate()
-    {
-        
-    }
-    
-    
-    
-    
-    
 }
